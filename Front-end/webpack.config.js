@@ -16,7 +16,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, '../firebase/public'),
+    path: path.resolve(__dirname, './build'),
     //fix can not get /url React-Router
     publicPath: '/',
   },
