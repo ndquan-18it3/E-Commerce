@@ -3,8 +3,8 @@ import queryString from 'query-string';
 
 //get env mode
 const env = process.env.NODE_ENV;
-// const baseURL = process.env.REACT_APP_API_URL;
-const baseURL = "https://e-commerce-be-yrdc.onrender.com";
+const baseURL = process.env.REACT_APP_API_URL;
+// const baseURL = "https://e-commerce-be-yrdc.onrender.com";
 
 //Set up default config for http request
 // Tao ra 1 object dung chung cho moi noi can import no
