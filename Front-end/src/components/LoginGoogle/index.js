@@ -55,7 +55,7 @@ function LoginGoogle(props) {
   return (
     <>
       <GoogleLogin
-        clientId={process.env.GOOGLE_CLIENT_ID}
+        clientId={"458553399428-7huq40lvu00lho262qilcfhnqhi33iec.apps.googleusercontent.com" || process.env.GOOGLE_CLIENT_ID}
         render={(renderProps) => (
           <div
             onClick={renderProps.onClick}
