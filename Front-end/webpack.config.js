@@ -52,7 +52,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.min.css',
     }),
-    new Dotenv(),
+    new Dotenv({path: path.resolve(__dirname, './.env')}),
   ],
   optimization: {
     splitChunks: {
@@ -78,7 +78,7 @@ module.exports = {
     historyApiFallback: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000/',
+        target: 'http://localhost:8080/',
       },
     },
   },
